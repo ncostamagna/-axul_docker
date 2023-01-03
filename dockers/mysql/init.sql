@@ -1,0 +1,5 @@
+
+
+CREATE DATABASE IF NOT EXISTS `axul_contact` ;
+CREATE DATABASE IF NOT EXISTS `axul_template` ;
+CREATE DATABASE IF NOT EXISTS `axul_user` ;
