@@ -11,7 +11,7 @@ services:
       - "8082:8082"
     environment:
       - APP_PORT=8082
-      - APP_URL=localhost:8082
+      - APP_URL=0.0.0.0:8082
       - ENVIRONMENT=Local
       - DATABASE_HOST=host.docker.internal
       - DATABASE_PORT=3306
@@ -35,7 +35,7 @@ services:
       - "8081:8081"
     environment:
       - APP_PORT=8081
-      - APP_URL=localhost:8081
+      - APP_URL=0.0.0.0:8081
       - ENVIRONMENT=Local
       - DATABASE_HOST=host.docker.internal
       - DATABASE_PORT=3306
