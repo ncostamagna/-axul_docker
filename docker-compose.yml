@@ -5,7 +5,6 @@ services:
     build:
       context: ../axul_user
       dockerfile: Dockerfile
-    restart: "always"
     volumes:
       - ../axul_user:/axul_user
     ports:
@@ -30,7 +29,8 @@ services:
     build:
       context: ../axul_contact
       dockerfile: Dockerfile
-    restart: "always"
+    depends_on:
+      - axul_user
     volumes:
       - ../axul_contact:/axul_contact
     ports:
